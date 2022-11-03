@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.header {
+    margin-top: 30px;
+    display: flex;
+    animation-name: bottom;
+}
+
+.header-logo {
+    font-family: 'Oswald';
+    font-size: 30px;
+    margin-left: 125px;
+    animation-name: left;
+    animation-duration: 1.5s;
+}
+
+@keyframes left {
+    from {  
+        margin-left: -200px;
+    }
+    
+    to {
+        margin-left: 125px;
+    }
+}
+
+.red-text {
+    color: #C60909;
+}
+
+/* навигация */
+
+.header-nav {
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 10px;
+    animation-name: down;
+    animation-duration: 1.5s;
+}
+
+.header-nav > a {
+    text-decoration: none;
+    text-transform: none;
+    color: #4B2A1E;
+    font-size: 18px;
+    padding-right: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-nav > a:hover {
+    color: #C60909;
+    transition: color 0.5s ease-in;
+}
+
+@keyframes down {
+    from {
+        margin-top: -100px;
+    }
+
+    to {
+        margin-top: 10px;
+    }
+}
+
+/* информация о тиграх */
+
+.section {
+    margin-top: 36px;
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(150, 105, 91, 0.62) 1.3%, rgba(197, 133, 112, 0.747288) 14.58%, rgba(197, 133, 112, 0.27) 39.06%, rgba(197, 133, 112, 0.901042) 81.25%, rgba(197, 133, 112, 0.68) 92.71%);
+    background-size: cover;
+    display: flex;
+}
+
+.section-img {
+    padding-top: 60px;
+    margin-left: 200px;
+}
+
+.section-info {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.section-name {
+    font-family: 'Oswald';
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.77);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-name > p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #5B2D25;
+    text-shadow: none;
+    width: 420px;
+    margin-left: 25px;
+    line-height: 30px;
+}
+
+.section-btn {
+    width: 275px;
+    height: 50px;
+    background-color: #D44646;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.section-btn > a {
+    display: block;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+.section-btn:hover {
+    background-color: #be2c2c;
+    transition: background-color 1s ease;
+}
+
+/* main */
+.main {
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+.main-header {
+    font-family: 'Oswald';
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.main-text {
+    margin-top: 40px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.main-btn {
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    background-color: rgba(107, 27, 27, 0.21);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.main-btn > a {
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    padding-top: 16px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-btn:hover {
+    background-color: rgba(255, 0, 0, 0.663);
+    transition: background-color 0.5s ease-in;
+}
+
+/* View Tiger */
+
+.section-view_tiger {
+    margin-top: 100px;
+    height: 607px;
+    background-image: url(image/Rectangle\ 7.png);
+    background-size: cover;
+}
+
+.tiger-info {
+    font-family: 'Oswald';
+    font-size: 50px;
+    text-align: center;
+    margin-left: 35px;
+    padding-top: 50px;
+    margin-right: 10px;
+
+}
+
+.section-img-tiger {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.image-tiger {
+    margin-left: 50px;
+    text-align: center;
+}
+
+.image-tiger:last-child {
+    margin-right: 45px;
+}
+
+.image-tiger > p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.section-view_tiger > .section-btn {
+    display: block;
+    width: 280px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(107, 27, 27, 0.21);
+    margin-top: 60px;
+
+}
+
+.section-view_tiger > .section-btn > a {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-left: 0px;
+    padding-right: 5px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-view_tiger > .section-btn:hover {
+    background-color: rgba(255, 0, 0, 0.663);
+    transition: background-color 0.5s ease-in;
+}
+
+/* article (факты о тиграх) */
+
+.article {
+    background-image: url(image/Rectangle\ 16.png);
+    height: 580px;
+    margin-top: 100px;
+}
+
+.article-header {
+    font-family: 'Oswald';
+    font-size: 50px;
+    text-align: center;
+    margin-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.artictle-tiger-fact {
+    font-family: 'Open Sans';
+    margin-left: 365px;
+    font-size: 18px;
+}
+
+.fact-list > li {
+    text-align: left;
+    list-style-type: none;
+    padding-bottom: 30px;
+}
+
+.square-animation {
+    animation: wipe-enter 2s;
+}
+
+@keyframes wipe-enter {
+    from {
+        margin-left: -300px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+/* footer */
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.footer-square-animation {
+    animation: footerscroll 2s;
+}
+
+@keyframes footerscroll {
+    from {
+        margin-top: 200px;
+    }
+
+    to {
+        margin-top: 0px;
+    }
+}
+
+.btn-square-animation {
+    animation: buttonscroll 2s;
+}
+
+@keyframes buttonscroll {
+    from {
+        margin-top: 50px;
+        opacity: 0;
+        transition: opacity 2s ease-in;
+    }
+
+    to {
+        margin-top: 20px;
+    }
+}
